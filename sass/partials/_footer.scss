@@ -1,0 +1,19 @@
+.wrapper {
+    width: 100%;
+    background-color: $primary;
+
+    footer {
+        width: 90%;
+        margin: 0 auto;
+        padding: 10px 0;
+        color: getColour(grey-text);
+    };
+    .col-md-2 {
+        @media(max-width: $tablet-width) {
+            padding: 10px 0;
+            text-align: center;
+        };
+    }
+}
+
+

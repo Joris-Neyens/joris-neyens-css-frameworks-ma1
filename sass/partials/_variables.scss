@@ -4,12 +4,12 @@ $font-secondary: 'Archivo Narrow', sans-serif;
 $font-primary: 'Open Sans', sans-serif;
 
 $colours: (
-    primary: #F4F3EE,
-    background: #E5E5E5,
+    grey: #E5E5E5,
     accent: #C32C72,
     black: #262626,
+    grey-text: #8D8D8D,
 );
 
-@function getColours($colour) {
-    @return get-map($colours, $colour);
+@function getColour($colour) {
+    @return map-get($colours, $colour);
 }

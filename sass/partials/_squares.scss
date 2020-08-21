@@ -1,0 +1,40 @@
+
+.square-common {
+    padding: 10%;
+    margin: 20px;
+    border-radius: 15px;
+
+    @media (max-width: $tablet-width) {
+    width: 90%;
+    margin: 20px auto;
+    padding-top: 80%;
+    }
+}
+
+.squares {
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+
+    @media (min-width: $tablet-width) {
+        display: flex;
+        justify-content: center;
+    };
+    
+
+    .squares__item {
+        @extend .square-common;
+        background-color: $primary;
+        
+    }   
+    .squares__item--white {
+        @extend .square-common;
+        background-color: white;
+        border: 4px solid getColour(accent);
+    }
+    .squares__item--accent {
+        @extend .square-common;
+        background-color: getColour(accent);
+        border: 4px solid white;
+    }
+}

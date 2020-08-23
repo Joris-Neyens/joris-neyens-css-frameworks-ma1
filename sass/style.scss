@@ -1,8 +1,5 @@
-@import "partials/variables";
-@import "partials/custom";
-@import "partials/squares";
-@import "partials/footer";
 
+@import "partials/custom";
 
 @import "../bootstrap-scss/functions";
 @import "../bootstrap-scss/variables";
@@ -42,10 +39,15 @@
 @import "../bootstrap-scss/utilities";
 @import "../bootstrap-scss/print";
 
-
-@import "partials/nav";
+@import "partials/variables";
 @import "partials/base";
 @import "partials/typography";
+@import "partials/nav";
+@import "partials/squares";
+@import "partials/footer";
+
+
+
 
 
 
